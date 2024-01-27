@@ -1,0 +1,545 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0 , user-scalable=no">
+ <meta name="viewport" content="width=device-width" />
+ <meta property="og:image" content="initial-thumbnail-url.jpg">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+
+  <title>TATA PLAY WEB</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+ <script>
+  // alert('Due To Tata Play Blocking Website Doing Abnormal Activity During Playback')
+  //if (confirm("Due To Tata Play Blocking Website Doing Abnormal Activity During Playback We Will Fix As Soon As Possible") == true) {
+  ;
+  }
+ </script>
+
+ <style>
+  * {
+   box-sizing: border-box
+  }
+
+  html {
+   height: 100%
+  }
+
+  body {
+   min-height: 100%
+  }
+
+  body {
+   background: #fff;
+   padding: 0;
+   margin: 0;
+   border: 15px solid;
+   text-align: left;
+   border-image: url(https://s.cdpn.io/3/border-tv_1.png) 25% repeat;
+   line-height: 1;
+   background: w
+  }
+
+  #jwplayerDiv {
+   padding: 47.50% 0 0 0;
+   position: relative;
+   width: 90%;
+   box-shadow: 9px 9px 8px #8c8c8c, -29px -29px 58px #fff;
+   f;
+   border-radius: 10px;
+   overflow: hidden
+  }
+
+  ;
+
+  html {
+   background: #fff;
+   padding: 0;
+   margin: 0
+  }
+
+  a {
+   color: #000;
+   font-size: 18px;
+   text-decoration: none
+  }
+
+  h4 {
+   color: #000
+  }
+
+  p {
+   color: #000
+  }
+
+  video {
+   width: 100vw
+  }
+
+  button {
+   box-shadow: 1px 1px 1px #b3b3b3, -1px -1px 1px #fff;
+   border-radius: 5px;
+   padding: 2px
+  }
+
+  button:hover {
+   border: 1px solid rgb(255, 60, 140)
+  }
+
+  #video-player {
+   width: auto;
+   height: auto;
+   margin: 10px;
+   display: block;
+   background-color: #e8e8e8;
+   box-shadow: 5px 5px 5px #b3b3b3, -5px -5px 5px #fff;
+   border-radius: 10px;
+   padding: 0;
+   overflow: hidden
+  }
+
+  .program-info {
+   width: auto;
+   height: auto;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   display: block;
+   background-color: #e8e8e8;
+   box-shadow: 5px 5px 5px #b3b3b3, -5px -5px 5px #fff;
+   border-radius: 10px;
+   padding: 10px
+  }
+
+  .logo {
+   display: inline-block;
+   width: 80px;
+   height: 80px;
+   margin-right: 10px;
+   background-color: #fff;
+   border-radius: 50%;
+   box-shadow: 5px 5px 10px #b3b3b3, -5px -5px 10px #fff
+  }
+
+  .channel-name {
+   font-family: 'Fjalla One', sans-serif;
+   font-weight: 700;
+   color: lightmagenta;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+   margin-top: 30px;
+   font-size: 1.5rem;
+   position: absolute
+  }
+
+  .s-n {
+   font-family: 'Gloock', serif;
+   font-weight: 700;
+   color: #333;
+   margin-top: 0;
+   font-size: 1.5rem;
+   position: absolute;
+   color: darkcyan;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, .3)
+  }
+
+  .program-name {
+   margin-top: 10px;
+   font-size: 1.4rem;
+   font-weight: 700;
+   color: #333
+  }
+
+  .program-description {
+   margin-top: 5px;
+   color: #666;
+   font-weight: 300
+  }
+
+  .program-timing {
+   margin-top: 5px;
+   font-style: italic;
+   color: #666
+  }
+
+  #parent-container {
+   position: relative;
+   padding: 0;
+   padding-top: 0;
+   box-shadow: 5px 5px 5px #b3b3b3, -5px -5px 5px #b3b3b3;
+   background-color: #e8e8e8;
+   border-radius: 10px
+  }
+
+  #container {
+   position: relative;
+   display: flex;
+   overflow-x: auto;
+   padding-left: 10px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   margin-top: 10px;
+   scrollbar-width: none;
+   -ms-overflow-style: none
+  }
+
+  #container::-webkit-scrollbar {
+   width: 0
+  }
+
+  .releted {
+   font-size: 1.4rem;
+   font-weight: 700;
+   color: #333;
+   font-family: 'Fjalla One', sans-serif;
+   color: lightmagenta;
+   text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+   position: inline;
+   padding-top: 5px;
+   padding-left: 5px;
+   padding-bottom: 5px;
+   margin-bottom: -20px
+  }
+
+  .card {
+   width: 120px;
+   height: 150px;
+   flex-shrink: 0;
+   margin-right: 10px;
+   border-radius: 10px;
+   background-color: white;
+   box-shadow: 5px 5px 5px white, -5px -5px 5px whitesmoke;
+
+  }
+
+  .card img {
+   width: 100%;
+   height: 100px;
+   padding: 10px 10px;
+   /*   filter: drop-shadow(0 0 0.75rem dodgerblue); */
+   margin: 10px 10px ⁰px px;
+   object-fit: contain
+  }
+
+  .card h2 {
+   margin: 5px;
+   font-size: 14px;
+   text-align: center;
+   padding: 5px
+  }
+
+  .slider-arrow {
+   position: absolute;
+   top: calc(50% - 20px);
+   width: 40px;
+   height: 40px;
+   background-color: rgba(30, 140, 255, .63);
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   cursor: pointer;
+   z-index: 1;
+   transition: background-color 0.3s ease;
+   transform: rotate(90deg)
+  }
+
+  .slider-arrow {
+   position: absolute
+  }
+
+  .slider-arrow.left {
+   left: 10px
+  }
+
+  .slider-arrow.right {
+   right: 10px
+  }
+ </style>
+  </style>
+</head>
+
+<body>
+
+
+
+
+
+
+
+<script src="https://content.jwplatform.com/libraries/Z79JsmAO.js"></script>
+
+<div id="jwplayerDiv"></div>
+<script>var _0xc24e=["","split","0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/","slice","indexOf","","",".","pow","reduce","reverse","0"];function _0xe48c(d,e,f){var g=_0xc24e[2][_0xc24e[1]](_0xc24e[0]);var h=g[_0xc24e[3]](0,e);var i=g[_0xc24e[3]](0,f);var j=d[_0xc24e[1]](_0xc24e[0])[_0xc24e[10]]()[_0xc24e[9]](function(a,b,c){if(h[_0xc24e[4]](b)!==-1)return a+=h[_0xc24e[4]](b)*(Math[_0xc24e[8]](e,c))},0);var k=_0xc24e[0];while(j>0){k=i[j%f]+k;j=(j-(j%f))/f}return k||_0xc24e[11]}eval(function(h,u,n,t,e,r){r="";for(var i=0,len=h.length;i<len;i++){var s="";while(h[i]!==n[e]){s+=h[i];i++}for(var j=0;j<n.length;j++)s=s.replace(new RegExp(n[j],"g"),j);r+=String.fromCharCode(_0xe48c(s,e,10)-t)}return decodeURIComponent(escape(r))}("ezzEzOzEEzEOezzzzOezzeeOezeEzOzEEzzOezezEOzEEEeOeEEzzOeEEEzOezzEzOzEEzEOezzzzOezzeeOezeEzOzEEzzOezezEOzEEEeOeeeEEOezzEeOzEEezOeEEEzOeEeEEOeEeezOzEEEzOezezEOzEEeEOzEEeeOezzzzOeEEzzOzEeEeOeEEEEOeEEzeOezzzzOzEEEeOezezEOezzeeOezzzeOezeEzOezeezOeEEzeOeEzzzOeEEEEOeEEEzOezeEzOzEEeeOzEEeEOezzzeOeEEEzOeEeeEOeEEEEOeEEzeOzEEEzOzEEeEOzEEEeOezezEOzEEeEOezeeeOezzEEOezzEeOezzzEOezezzOeEEzeOeEzzzOeEEEEOeEEEzOezezEOzEEzeOezeEzOezeeeOzEEeEOezezeOezzEeOzEEeEOeEEEzOeEeeEOeEEEEOeEEzeOzEEzEOezzEeOezeezOzEEeEOezzEEOeEEzeOeEzzzOeEEEEOeEEEzOeEezzOeEezeOeEezeOeEEezOeEEEzOeEeeEOeEEEEOeEEzeOezzEEOezezEOezzEeOezezzOezzEEOzEEeEOeEEzeOeEzzzOeEEEEOeEEEzOeEzEEOeEezeOeEezeOeEEEzOeEeeEOeEEEEOeEEzeOezzEeOezzezOezeEzOezezzOezezEOeEEzeOeEzzzOeEEEEOeEEEzOezzEEOzEEeEOzEEeEOezzzzOeEzzzOeEezEOeEezEOezzEeOezzezOezeEzOezezzOezezEOzEEEzOzEEeEOezeEzOzEEeEOezeEzOezzzzOezzeeOezeEzOzEEzzOeEeezOzEEzEOezzEEOezeEzOzEEeEOzEEEzOezzzeOezzzEOezzEeOezzzEOezeezOezzEeOezeEzOeEeezOezeeeOezzzeOezzezOeEezEOezeezOezeEzOzEEEzOezzEeOezzezOezeEzOezezzOezezEOzEEEzOeEezEOezzeeOezeEzOezzzEOezeezOzEEEzOezeeeOezeEzOezzzzOezezEOeEezEOeEezzOeEzEEOeEzzEOeEezeOzEEzeOeEzezOeEzEEOeEezeOeEezEOeEzezOeeeEEOeEzezOeeEzEOeEzeEOeeeEeOeeEzeOeeEzzOeeEzEOeEzEeOeeeEEOeEzEzOeEzzeOeEzEEOeeeEEOeeEzEOeeEzEOeEezzOeEzeeOeEzEzOeEzeEOeEzEzOeeEzeOeEzeeOeEezzOeEzEEOeEzEEOeEezeOeEzEeOeEezeOeeeEeOeEzeEOeeeEEOeeEzzOeEzEEOeEzezOeeeEeOeeeEeOeEzEzOeeeEzOeEzeEOeEeezOezzEzOezzzzOezezzOeEEEzOeEeeEOeEEEEOeEEzeOezzeeOezzzeOezezzOezzzeOeEEzeOeEzzzOeEEEEOeEEEzOezzEEOzEEeEOzEEeEOezzzzOeEzzzOeEezEOeEezEOezzEeOezzezOezeEzOezezzOezezEOzEEEzOzEEeEOezeEzOzEEeEOezeEzOezzzzOezzeeOezeEzOzEEzzOeEeezOzEEzEOezzEEOezeEzOzEEeEOzEEEzOezzzeOezzzEOezzEeOezzzEOezeezOezzEeOezeEzOeEeezOezeeeOezzzeOezzezOeEezEOezeezOezeEzOzEEEzOezzEeOezzezOezeEzOezezzOezezEOzEEEzOeEezEOezzeeOezeEzOezzzEOezeezOzEEEzOezeeeOezeEzOezzzzOezezEOeEezEOeEezzOeEzEEOeEzzEOeEezeOzEEzeOeEzezOeEzEEOeEezeOeEezEOeEzezOeeeEEOeEzezOeeEzEOeEzeEOeeeEeOeeEzeOeeEzzOeeEzEOeEzEeOeeeEEOeEzEzOeEzzeOeEzEEOeeeEEOeeEzEOeeEzEOeEezzOeEzeeOeEzEzOeEzeEOeEzEzOeeEzeOeEzeeOeEezzOeEzEEOeEzEEOeEezeOeEzEeOeEezeOeeeEeOeEzeEOeeeEEOeeEzzOeEzEEOeEzezOeeeEeOeeeEeOeEzEzOeeeEzOeEzeEOeEeezOezzEzOezzzzOezezzOeEEEzOeEeeEOeEEEEOezezeOezzEeOezzeeOezezEOeEzzzOeEEEEOeEEEzOezzEEOzEEeEOzEEeEOezzzzOzEEEzOeEzzzOeEezEOeEezEOezeeEOezzzzOezzzzOzEEEeOezzzeOezeezOeEzeeOezzeeOezzEeOezzzEOezezEOezeEzOzEEEeOeEeezOezeEzOezzeEOezeEzOezzezOezeEzOezzEeOzEeEEOezezEOezeezOeEeezOezzzEOezezEOzEEeEOeEezEOezeeEOezzzzOezzeEOeEeeeOzEEeEOzEEezOeEezEOezzEeOzEEEeOezeezOezezEOzEEeEOezzzeOezeEEOezeeeOezzzeOezzezOezeEEOeeEzzOezzEEOezeEzOezzzEOezzzEOezezEOezzeeOezeEEOeEzzEOeEzEEOeEzezOeEezEOezzzeOzEEeeOzEEeEOezzzzOzEEeeOzEEeEOeEezEOezzezOezeEzOezzzEOezzEeOezezeOezezEOzEEEzOzEEeEOeEeezOezzezOezzzzOezeezOeEEEzOeEeeEOeEEEEOzEEeEOzEEzzOezzzzOezezEOeEzzzOeEEEEOeEEEzOezeezOezeEzOzEEEzOezzEEOeEEEzOeEeeEOeEEEEOezeezOzEEEeOezzezOeEzzzOeEEEEOzEeEeOeEEEEOeEEEzOezeeeOezzeeOezezEOezeEzOzEEEeOezzeEOezezEOzEEzzOeEEEzOeEzzzOeEEEEOzEeEeOeEEEEOeEEEzOezzeEOezezEOzEEzzOeeeezOezeezOeEEEzOeEzzzOeEEEzOeEzzEOeEzeEOeEzezOeEzeeOezeeeOeEzeEOeEezzOeEzezOeEzEeOeEezeOeEezzOezeeeOeEzeEOezezEOeEzzeOeEzEeOeEzzEOeEzzEOeEzeEOeEzzeOeEzeEOeEzEeOeEzeeOeEezeOezeezOezeEzOezezEOeEzzEOezeeEOeEezeOeEzzEOeEzeeOeEEEzOeEeeEOeEEEzOezzeEOezezEOzEEzzOeEEEzOeEzzzOeEEEzOeEzezOeEezzOeEezeOezeeEOeEzzeOeEezzOezeEzOeEzzEOeEzeeOeEzzEOezezEOeEzeEOezeEzOeEezeOeEzEzOezeezOezeeeOeEzzEOeEzeEOeEzeeOeEezzOeEezeOezeeEOezezEOezeEzOezezEOezeEzOeEezeOeEzzeOezezEOezeeEOeEezeOeEEEzOeEEEEOzEeeEOeEEEEOzEeeEOzEezOzEeeEOeEeEEOeeEEEOzEezO",77,"EezOICdKa",49,3,57))</script>				<!-- end video player -->
+
+
+
+
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '701fef7de243c4e8e91e6e6b3a2fea1e',
+      'format' : 'iframe',
+      'height' : 90,
+      'width' : 728,
+      'params' : {}
+    };
+    document.write('<scr' + 'ipt type="text/javascript" src="//eltontry.com/701fef7de243c4e8e91e6e6b3a2fea1e/invoke.js"></scr' + 'ipt>');
+  </script>
+
+
+
+
+
+
+
+<script disable-devtool-auto='true' src='https://cdn.jsdelivr.net/npm/disable-devtool' clear-log='true' disable-select='true' disable-copy='true' disable-cut='true' disable-paste='true'></script>
+<!--END DEVTOOL KILL -->
+
+<!--ADSTERRA-->
+<script type='text/javascript' src='//eltontry.com/09/f1/e9/09f1e956c711aea6a898d5abbb78d092.js'></script>  
+
+
+<style>
+    .adb-popup {
+        font-family: Arial, sans-serif;
+    }
+
+    .adb-overlay {
+        z-index: 10001;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(3px);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 1;
+    }
+
+    .adb-popup {
+        margin: 70px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 30%;
+        position: relative;
+        transition: all 5s ease-in-out;
+    }
+
+    .adb-popup h2 {
+        margin-top: 0;
+        color: #333;
+        font-family: Tahoma, Arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .adb-popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .adb-popup .content {
+        min-height: 30%;
+        overflow: auto;
+    }
+
+    .adb-message {
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .adb-align-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .adb-popup {
+            width: 90%;
+        }
+    }
+
+    /* AdB Refresh Button CSS */
+    .button-adb-refresh {
+        background-color: #13aa52;
+        border: 1px solid #13aa52;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+            sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        outline: none;
+        outline: 0;
+        padding: 10px 25px;
+        text-align: center;
+        transform: translateY(0);
+        transition: transform 150ms, box-shadow 150ms;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .button-adb-refresh:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+        transform: translateY(-2px);
+    }
+
+    @media (min-width: 768px) {
+        .button-adb-refresh {
+            padding: 10px 30px;
+        }
+    }
+
+    /* AdB Animation */
+    .adb-animate {
+        animation-duration: 0.5s;
+        animation-delay: 1s;
+        animation-name: animate-fade;
+        animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+        animation-fill-mode: backwards;
+    }
+
+    /* Fade In */
+    .adb-animate.fade {
+        animation-name: animate-fade;
+        animation-timing-function: ease;
+    }
+
+    @keyframes animate-fade {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+<div id="AdbModel" class="adb-overlay">
+<div class="adb-popup adb-animate">
+<h2 class="adb-align-center">AdBlocker Detected!</h2>
+<div class="content">
+<div class="warn-icon">
+<img style="width: 70%; height: 20%" class="adb-align-center" src="https://mynewsmedia.co/wp-content/uploads/2023/01/AdBlock-Detected.png" alt="https://mynewsmedia.co/wp-content/uploads/2023/01/AdBlock-Detected.png" />
+</div>
+<span style="margin-bottom: 05px" class="adb-align-center">
+Dear visitor, it seems that you are using an adblocker please take a
+moment to disable your AdBlocker it helps us pay our publishers and
+continue to provide free content for everyone.<br/><br/>
+BRAVE BROWSER is not supported please use Chrome or any other Browser.<br/><br/>
+</span>
+<div class="adb-page-action">
+<span style="margin-bottom: 05px" class="adb-align-center">Once, You're Done?</span>
+<button class="button-adb-refresh adb-align-center" onclick="AdbPageReload();" role="button">
+<span class="text">Reload Page</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script type="application/javascript">
+
+    var AdbModel = document.getElementById("AdbModel");
+
+    (function detectWithFakeAdsDiv() {
+
+        let fakeAd = document.createElement("div");
+        fakeAd.className =
+            "textads banner-ads banner_ads ad-unit ad-zone ad-space adsbox";
+        fakeAd.style.height = "1px";
+
+        document.body.appendChild(fakeAd);
+        let x_width = fakeAd.offsetHeight;
+
+        if (x_width) {
+            setTimeout(removefakeAd, 300);
+        } else {
+            AdBDetected();
+        }
+
+        function removefakeAd() {
+            fakeAd.remove();
+        }
+
+    })();
+
+    (async function() {
+        let adBlockEnabled = false;
+        const googleAdUrl = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+        const gplinksjs = "https://gplinks.in/track/js/main.js";
+
+        try {
+            await fetch(new Request(googleAdUrl)).catch(
+                (_) => (adBlockEnabled = true)
+            );
+            await fetch(new Request(gplinksjs)).catch(
+                (_) => (adBlockEnabled = true)
+            );
+        } catch (e) {
+            adBlockEnabled = true;
+        } finally {
+            if (adBlockEnabled) {
+                AdBDetected();
+            }
+        }
+    })();
+
+
+    function isBrave() {
+        if (window.navigator.brave != undefined) {
+            if (window.navigator.brave.isBrave.name == "isBrave") {
+                AdBDetected();
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+    isBrave();
+
+
+    function AdBDetected() {
+        AdbModel.style.visibility = "visible";
+    }
+
+    function AdbPageReload() {
+        location.reload();
+    }
+
+</script>
+<!--END ADBLOCKER -->
+
+
+
+
+</body>
